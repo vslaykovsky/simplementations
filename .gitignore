@@ -1,0 +1,5 @@
+data/
+.idea
+MNIST/
+.ipynb_checkpoints
+wandb/
