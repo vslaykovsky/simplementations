@@ -3,3 +3,6 @@ data/
 MNIST/
 .ipynb_checkpoints
 wandb/
+videos/
+runs/
+models/
