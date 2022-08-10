@@ -6,3 +6,4 @@ wandb/
 videos/
 runs/
 models/
+movielens/
