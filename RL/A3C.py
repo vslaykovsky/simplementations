@@ -153,7 +153,7 @@ class A3CAgent(torch.multiprocessing.Process):
                         # value update MSE error for gradient **descent** = ({t['reward'] + gamma * t['new_state_value']} - t['state_value'])^2
                         #                       grad(value) = ({t['reward'] + gamma * t['new_state_value']} - t['state_value'])*grad(-t['state_value'])
                         #                                   = -advantage * grad(t['state_value'])
-                        values = torch.concat([t['state_value'] for t in rollout])
+                        values = torch.cat([t['state_value'] for t in rollout])
                         value_loss = -(advantages * values).mean()
 
                         # policy update for gradient **ascent** = -advantage * log(t['action_dist'][t['action']]))
